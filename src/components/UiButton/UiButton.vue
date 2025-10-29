@@ -17,25 +17,15 @@ const props = withDefaults(defineProps<IProps>(), {
 });
 </script>
 
-<style module lang="scss">
-.button {
-  position: relative;
-  display: inline-flex;
-  gap: 8px;
-  align-items: center;
-  justify-content: center;
-  height: 40px;
-  padding: 16px 32px;
-  font-size: 1rem;
-  line-height: 1.5;
-  color: var(--color-white);
-  background: var(--color-primary);
-  border-radius: 16px;
-
-  &[data-layout='secondary'] {
-    color: var(--color-primary);
-    background-color: var(--color-transparent);
-    border-color: var(--color-primary);
-  }
+<style scoped>
+.ui-button {
+  background-color: #0d021a;
+  color: #ff6ec7;
+  border: 2px solid #8a2be2;
+  font-family: 'Georgia', serif;
+  padding: 10px 20px;
+}
+.ui-button:hover {
+  background-color: #05000d;
 }
 </style>
