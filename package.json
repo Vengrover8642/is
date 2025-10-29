@@ -1,7 +1,7 @@
 {
   "name": "my-is-buttons",
   "description": "Is components",
-  "version": "0.0.6",
+  "version": "0.1.0",
   "license": "MIT",
   "type": "module",
   "main": "dist/index.js",
