@@ -17,11 +17,21 @@
     "noFallthroughCasesInSwitch": true,
     "allowUnreachableCode": false,
     "allowUnusedLabels": false,
-    "types": ["vite/client", "vite-svg-loader", "node"],
+    "types": [
+      "@storybook/vue3",
+      "vite/client",
+      "vite-svg-loader",
+      "node"
+    ],
     "baseUrl": "./",
     "noEmit": true
   },
-  "include": ["src/**/*.ts", "src/*.d.ts", "src/components/**/*.vue"],
-  "exclude": ["node_modules", "dist", "storybook-static"],
-  "references": [{ "path": "./tsconfig.node.json" }]
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.d.ts",
+    "src/**/*.vue"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
 }

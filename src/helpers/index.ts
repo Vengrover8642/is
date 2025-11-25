@@ -1,12 +1,5 @@
-export function html(strings: TemplateStringsArray, ...expressions: unknown[]): string {
-  const result: string[] = [];
+// src/index.ts
 
-  for (const [i, string] of strings.entries()) {
-    result.push(string);
-    if (i < expressions.length) {
-      result.push(String(expressions[i]));
-    }
-  }
-
-  return result.join('');
-}
+export { default as UiInput } from './components/UiInput.vue';
+export { default as UiSelect } from './components/UiSelect.vue';
+export { default as UIButton } from './components/UIButton.vue';

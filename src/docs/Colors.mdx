@@ -1,38 +1,11 @@
-import { ColorPalette, ColorItem } from '@storybook/addon-docs/blocks';
+# Цвета библиотеки
 
-# Colors
+Все цвета задаются через CSS-переменные. Это позволяет легко менять темы.
 
-<ColorPalette>
+## Переменные
 
-<ColorItem
-  title='Primary'
-  colors={{
-    '--color-primary': '#006cbb',
-  }}
-/>
-
-<ColorItem
-  title='Monochrome'
-  colors={{
-    '--color-white': '#ffffff',
-    '--color-gray-light': '#eeeeee',
-    '--color-gray': '#cccccc',
-    '--color-gray-dark': '#777777',
-    '--color-black': '#000000',
-  }}
-/>
-
-<ColorItem
-  title='Success'
-  colors={{
-    '--color-success': '#01bd78',
-  }}
-/>
-
-<ColorItem
-    title='Error'
-    colors={{
-      '--color-error': '#d40019',
-    }}
-/>
-</ColorPalette>
+- `--color-primary`: Основной цвет кнопок (по умолчанию `#007bff`)
+- `--color-secondary`: Вторичный цвет (по умолчанию `#6c757d`)
+- `--color-text`: Цвет текста (по умолчанию `#333`)
+- `--color-border`: Цвет границ (по умолчанию `#ddd`)
+- `--color-background-disabled`: Фон для disabled состояния (по умолчанию `#f5f5f5`)
