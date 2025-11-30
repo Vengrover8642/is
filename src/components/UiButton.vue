@@ -2,7 +2,7 @@
   <button
     :class="['ui-button', `ui-button--${layout}`, { 'ui-button--disabled': isDisabled }]"
     :disabled="isDisabled"
-    :type="type"
+    :type="type as 'button' | 'submit' | 'reset'"
     :data-variant="layout"
   >
     <slot />

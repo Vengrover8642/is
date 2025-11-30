@@ -1,6 +1,6 @@
 {
   "name": "@vengrover8642/is",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "UI components library",
   "main": "./dist/is.umd.js",
   "module": "./dist/is.es.js",
@@ -13,27 +13,35 @@
       "import": "./dist/is.es.js",
       "require": "./dist/is.umd.js",
       "types": "./dist/index.d.ts"
+    },
+    "./UiButton": {
+      "import": "./dist/UiButton.es.js",
+      "require": "./dist/UiButton.umd.js",
+      "types": "./dist/UiButton.d.ts"
+    },
+    "./UiInput": {
+      "import": "./dist/UiInput.es.js",
+      "require": "./dist/UiInput.umd.js",
+      "types": "./dist/UiInput.d.ts"
+    },
+    "./UiSelect": {
+      "import": "./dist/UiSelect.es.js",
+      "require": "./dist/UiSelect.umd.js",
+      "types": "./dist/UiSelect.d.ts"
     }
   },
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",
-    "storybook": "npx storybook dev -p 6006"
+    "prepublishOnly": "npm run build"
   },
-  "dependencies": {
+  "peerDependencies": {
     "vue": "^3.3.0"
   },
   "devDependencies": {
-    "@storybook/vue3": "^7.6.0",
-    "@storybook/addon-essentials": "^7.6.0",
-    "@storybook/addon-interactions": "^7.6.0",
-    "@storybook/addon-links": "^7.6.0",
-    "@storybook/blocks": "^7.6.0",
-    "@storybook/vue3-vite": "^7.6.0",
-    "@vitejs/plugin-vue": "^4.5.0",
-    "sass": "^1.69.0",
-    "typescript": "^5.0.0",
-    "vite": "^4.5.0",
-    "vue-tsc": "^1.0.0"
+    "@types/node": "^24.10.1",
+    "@vitejs/plugin-vue": "^6.0.2",
+    "vite": "^7.2.4",
+    "vue-tsc": "^3.1.5"
   }
 }

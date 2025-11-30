@@ -1,20 +1,19 @@
-// IS/vite.config.ts
-
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
+import { resolve } from 'path' 
 
-export default defineConfig({
+export default defineConfig({ 
   plugins: [vue()],
   build: {
     lib: {
-      entry: 'src/index.ts', 
+      entry: resolve(__dirname, 'src/components/index.ts'),
       name: 'is',
-      fileName: (format) => `is.${format}.js`
+      fileName: (format) => `is.${format}.js` 
     },
     rollupOptions: {
       external: ['vue'],
       output: {
-        globals: {
+        globals: { 
           vue: 'Vue'
         }
       }
