@@ -1,6 +1,6 @@
 {
   "name": "@vengrover8642/is",
-  "version": "0.1.1",
+  "version": "0.1.4",
   "description": "UI components library",
   "main": "./dist/is.umd.js",
   "module": "./dist/is.es.js",
